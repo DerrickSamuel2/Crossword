@@ -199,3 +199,96 @@
 2025-10-15 11:39:41,501 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 240, Duration: 0ms
 2025-10-15 11:39:41,502 - Knowledge - INFO - Saving knowledge to Redis...
 2025-10-15 11:39:41,509 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-10-15 11:41:23,900 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-10-15 11:41:23,903 - Knowledge - INFO - Starting Knowledge Graph processing with 50 threads
+2025-10-15 11:41:23,903 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-10-15 11:41:24,669 - Knowledge - INFO - load persisted knowledge: begin
+2025-10-15 11:41:24,718 - Knowledge - INFO - Persisted knowledge files in /app/data/b2c/34607/b5157kb/Crossword/.knowledge have been renamed to use .json
+2025-10-15 11:41:24,728 - Knowledge - INFO - Found code-base-name: https://github.com/DerrickSamuel2/Crossword.git:master
+2025-10-15 11:41:24,729 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f62c49f9950>
+2025-10-15 11:41:24,733 - Knowledge - INFO - process ingested knowledge for /app/data/b2c/34607/b5157kb/Crossword/js/script.js
+2025-10-15 11:41:24,740 - Knowledge - INFO - Found code-base-name: https://github.com/DerrickSamuel2/Crossword.git:master
+2025-10-15 11:41:24,741 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f62c49f9950>
+2025-10-15 11:41:24,743 - Knowledge - INFO - process ingested knowledge for /app/data/b2c/34607/b5157kb/Crossword/index.html
+2025-10-15 11:41:24,752 - Knowledge - INFO - Found code-base-name: https://github.com/DerrickSamuel2/Crossword.git:master
+2025-10-15 11:41:24,753 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f62c49f9950>
+2025-10-15 11:41:24,756 - Knowledge - INFO - process ingested knowledge for /app/data/b2c/34607/b5157kb/Crossword/js/jquery.crossword.js
+2025-10-15 11:41:24,756 - Knowledge - INFO - Loaded 3 files from persisted knowledge
+2025-10-15 11:41:24,757 - Knowledge - INFO - load persisted knowledge: end
+2025-10-15 11:41:24,769 - Knowledge - INFO - Redis support added with prefix knowledge:b5157kb:
+2025-10-15 11:41:24,850 - Knowledge - INFO - load persisted docinfo: begin
+2025-10-15 11:41:24,853 - Knowledge - INFO - load persisted docinfo: end
+2025-10-15 11:41:24,854 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2025-10-15 11:41:24,854 - Knowledge - INFO - knowledge worker kw1 start
+2025-10-15 11:41:24,854 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2025-10-15 11:41:24,855 - Knowledge - INFO - [kw1] Queue=3, InProgress=0, PendingWorkers=0/1, Completed=0/3 (0.0%)
+2025-10-15 11:41:24,856 - Knowledge - INFO - knowledge worker kw2 start
+2025-10-15 11:41:24,856 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2025-10-15 11:41:24,857 - Knowledge - INFO - Dynamic batch size: 3 for queue=3
+2025-10-15 11:41:24,859 - Knowledge - INFO - knowledge worker kw3 start
+2025-10-15 11:41:24,859 - Knowledge - INFO - Worker kw1 processing /app/data/b2c/34607/b5157kb/Crossword/js/script.js
+2025-10-15 11:41:24,877 - Knowledge - INFO - Worker kw1 processing /app/data/b2c/34607/b5157kb/Crossword/index.html
+2025-10-15 11:41:24,878 - Knowledge - INFO - Worker kw1 processing /app/data/b2c/34607/b5157kb/Crossword/js/jquery.crossword.js
+2025-10-15 11:41:30,548 - Knowledge - INFO - [LLM_CALL] Completed: jquery.crossword.js:chunk1, Duration: 5608ms, PromptTokens: 9268, CompletionTokens: 395, Cost: $0.00000
+2025-10-15 11:41:30,549 - Knowledge - INFO - done ingest for /app/data/b2c/34607/b5157kb/Crossword/js/jquery.crossword.js
+2025-10-15 11:41:31,701 - Knowledge - INFO - [LLM_CALL] Completed: script.js:chunk1, Duration: 6815ms, PromptTokens: 12204, CompletionTokens: 638, Cost: $0.00000
+2025-10-15 11:41:31,724 - Knowledge - INFO - done ingest for /app/data/b2c/34607/b5157kb/Crossword/js/script.js
+2025-10-15 11:41:31,975 - Knowledge - INFO - [LLM_CALL] Completed: index.html:chunk1, Duration: 7053ms, PromptTokens: 14322, CompletionTokens: 697, Cost: $0.00000
+2025-10-15 11:41:31,977 - Knowledge - INFO - done ingest for /app/data/b2c/34607/b5157kb/Crossword/index.html
+2025-10-15 11:41:32,057 - Knowledge - INFO - Processing batch of 3 files
+2025-10-15 11:41:32,059 - Knowledge - INFO - process ingested knowledge for /app/data/b2c/34607/b5157kb/Crossword/js/script.js
+2025-10-15 11:41:32,062 - Knowledge - INFO - process ingested knowledge for /app/data/b2c/34607/b5157kb/Crossword/index.html
+2025-10-15 11:41:32,062 - Knowledge - INFO - process ingested knowledge for /app/data/b2c/34607/b5157kb/Crossword/js/jquery.crossword.js
+2025-10-15 11:41:32,307 - Knowledge - INFO - Knowledge creation complete
+2025-10-15 11:41:32,307 - Knowledge - INFO - ==================================================
+2025-10-15 11:41:32,307 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-10-15 11:41:32,308 - Knowledge - INFO - ==================================================
+2025-10-15 11:41:32,308 - Knowledge - INFO - Total processing time: 8.41 seconds (0.14 minutes)
+2025-10-15 11:41:32,308 - Knowledge - INFO - Files processed: 0
+2025-10-15 11:41:32,309 - Knowledge - INFO - Processing rate: 0.00 files/second
+2025-10-15 11:41:32,309 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2025-10-15 11:41:32,309 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2025-10-15 11:41:32,310 - Knowledge - INFO - LLM Processing: 19.48s (231.6%)
+2025-10-15 11:41:32,310 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2025-10-15 11:41:32,310 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2025-10-15 11:41:32,311 - Knowledge - INFO - WebSocket Communication: 0.00s (0.0%)
+2025-10-15 11:41:32,311 - Knowledge - INFO - 
+[LLM_STATS]
+2025-10-15 11:41:32,312 - Knowledge - INFO - Total LLM calls: 3
+2025-10-15 11:41:32,312 - Knowledge - INFO - Average LLM response time: 6492ms
+2025-10-15 11:41:32,313 - Knowledge - INFO - Average prompt tokens: 11931.3
+2025-10-15 11:41:32,313 - Knowledge - INFO - Average completion tokens: 576.7
+2025-10-15 11:41:32,313 - Knowledge - INFO - Total prompt tokens: 35794
+2025-10-15 11:41:32,313 - Knowledge - INFO - Total completion tokens: 1730
+2025-10-15 11:41:32,314 - Knowledge - INFO - Total LLM cost: $0.0000
+2025-10-15 11:41:32,314 - Knowledge - INFO - 
+[DATABASE_STATS]
+2025-10-15 11:41:32,314 - Knowledge - INFO - MongoDB operations: 0
+2025-10-15 11:41:32,315 - Knowledge - INFO - Redis operations: 0
+2025-10-15 11:41:32,315 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2025-10-15 11:41:32,315 - Knowledge - INFO - WebSocket messages sent: 0
+2025-10-15 11:41:32,315 - Knowledge - INFO - 
+[WORKER_STATS]
+2025-10-15 11:41:32,316 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2025-10-15 11:41:32,316 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2025-10-15 11:41:32,317 - Knowledge - INFO - ==================================================
+2025-10-15 11:41:32,317 - Knowledge - INFO - ==================================================
+2025-10-15 11:41:32,317 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-10-15 11:41:32,318 - Knowledge - INFO - ==================================================
+2025-10-15 11:41:32,318 - Knowledge - INFO - Total processing time: 8.44 seconds (0.14 minutes)
+2025-10-15 11:41:32,318 - Knowledge - INFO - Files processed: 3 of 3
+2025-10-15 11:41:32,318 - Knowledge - INFO - Processing rate: 0.36 files/second
+2025-10-15 11:41:32,319 - Knowledge - INFO - WebSocket messages sent: 0
+2025-10-15 11:41:32,319 - Knowledge - INFO - MongoDB operations: 3
+2025-10-15 11:41:32,319 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2025-10-15 11:41:32,319 - Knowledge - INFO - LLM costs: $0.0017
+2025-10-15 11:41:32,320 - Knowledge - INFO - Prompt tokens: 14322
+2025-10-15 11:41:32,320 - Knowledge - INFO - Completion tokens: 697
+2025-10-15 11:41:32,321 - Knowledge - INFO - Updating org costs, total cost: 0.0017109999999999998
+2025-10-15 11:41:32,323 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 240, Duration: 0ms
+2025-10-15 11:41:33,160 - Knowledge - INFO - Saving knowledge to Redis...
+2025-10-15 11:41:33,167 - Knowledge - INFO - Knowledge saved to Redis successfully

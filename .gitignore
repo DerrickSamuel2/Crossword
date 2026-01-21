@@ -6,3 +6,7 @@
 # Knowledge graph metadata - only commit the bundle
 .knowledge/
 .knowledge
+
+# Knowledge graph metadata - only commit the bundle
+.knowledge/
+.knowledge

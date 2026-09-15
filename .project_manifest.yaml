@@ -1,0 +1,7 @@
+name: crossword
+description: A browser-based crossword puzzle application.
+commands:
+  install: ""
+  start: "python3 -m http.server 8000"
+  test: "npx vitest run"
+  e2e: "npx playwright test"

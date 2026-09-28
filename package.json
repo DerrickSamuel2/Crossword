@@ -1,0 +1,17 @@
+{
+  "name": "electronics-crossword",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A dependency-free static electronics crossword application.",
+  "type": "module",
+  "scripts": {
+    "start": "http-server . -c-1",
+    "test": "node --test test/*.test.js",
+    "test:browser": "playwright test",
+    "test:browser:ci": "CI=true playwright test --reporter=list"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "http-server": "^14.1.1"
+  }
+}

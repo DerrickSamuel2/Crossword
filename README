@@ -1,1 +1,69 @@
-I built this crossword puzzle to provide an enhanced, more intuitive user experience with javascript.
+# Electronics Crossword
+
+A responsive, dependency-free static crossword application with an electronics-themed puzzle. The browser uses only local HTML, CSS, and JavaScript assets; Node.js tooling is needed only to serve and verify the project locally.
+
+## Features
+
+- Numbered **Across** and **Down** clues generated from validated puzzle data.
+- Keyboard- and pointer-friendly grid navigation, including direction changes at intersections.
+- Entry checking, solved-clue feedback, reset support, and an accessible completion announcement.
+- Responsive layout that keeps the puzzle and clue lists usable on desktop and narrow screens.
+
+## Prerequisites
+
+- Node.js 20 or later
+- npm
+- Chromium for browser-test execution (install it with the command below when it is not already available)
+
+## Run locally
+
+Install the development tooling and start the local static server:
+
+```sh
+npm install
+npm run start
+```
+
+Open the address printed by `http-server` (normally `http://127.0.0.1:8080`) in a modern browser.
+
+## Controls
+
+- Select an **Across** or **Down** clue to choose an entry.
+- Type one letter in a selected grid square; the selection advances within the active entry.
+- Use arrow keys to move through the active entry.
+- Use **Backspace** to clear the current square, or move back and clear the preceding square.
+- Select an intersecting square again to switch its active direction.
+- Use **Enter** or **Check entry** to verify the active answer.
+- Use **Reset puzzle** to clear all player-entered letters and restart at 1 Across.
+
+## Verification
+
+Run deterministic puzzle-model tests:
+
+```sh
+npm test
+```
+
+Run browser interaction tests against a local static server:
+
+```sh
+npm run test:browser
+```
+
+For CI, use the non-interactive browser command:
+
+```sh
+npm run test:browser:ci
+```
+
+If Chromium is not installed for Playwright in the current environment, install it once:
+
+```sh
+npx playwright install chromium
+```
+
+All tests use local application assets and do not rely on a network-loaded runtime library.
+
+## Static deployment boundary
+
+This project is intended for static hosting. Puzzle answers are present in browser-delivered JavaScript so the client can verify entries; this is not answer security. A backend would be required to conceal answers or persist player progress.
